@@ -3,11 +3,11 @@ module.exports = {
         host:'localhost',
         port:8080,
         proxy:{
-            '/pay':{
-                target:'https://order.imooc.com',
-                changeOrigin:false,
+            '/api':{
+                target:'https://www.imooc.com',
+                changeOrigin:true,
                 pathRewrite:{
-                    '/pay':'/pay'
+                    '/api':''
                 }
             }
         }
