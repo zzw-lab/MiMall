@@ -5,8 +5,13 @@ import VueAxios from 'vue-axios' //作用:避免每个页面都要写导入axios
 import App from './App.vue'
 // import env from './env'
 
+const mock = true;
+if(mock){
+  require('./mock/api');
+}
+
 //根据前端的跨域方式做调整
-// axios.defaults.baseURL = '/api';
+axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 
 //根据环境变量获取不同的请求地址
