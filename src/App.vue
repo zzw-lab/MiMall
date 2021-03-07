@@ -6,7 +6,7 @@
 
 <script>
 // import jsonp from 'jsonp'
-import storage from './storage'
+// import storage from './storage'
 export default {
   name: 'App',
   components: {
@@ -14,7 +14,7 @@ export default {
   },
   data(){
     return{
-     
+     res:{}
     }
   },
   mounted(){
@@ -25,7 +25,14 @@ export default {
 
     // storage.setItem('user',{a:1});
     //storage.setItem('abc',{a:1},'user');
-    storage.clear('a','user');
+    // storage.clear('a','user');
+
+    //Mock设置方法一：本地加载请求静态json文件
+    this.axios.get('/mock/user/login.json').then((res)=>{
+      this.res = res;
+    });
+
+  
   }
 }
 </script>
