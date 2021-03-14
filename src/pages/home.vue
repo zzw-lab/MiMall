@@ -10,7 +10,7 @@
   import NavFooter from './../components/NavFooter'
   export default{
     name:'nav-home',
-    components:{  //加载多个组件
+    components:{
       NavHeader,
       NavFooter
     }
