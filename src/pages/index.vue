@@ -19,24 +19,94 @@
             </li>
             <li class="menu-item">
               <a href="javascript:;">电视 盒子</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">笔记本 平板</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">家电 插线板</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">出行 穿戴</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">智能 路由器</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">电源 配件</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item">
               <a href="javascript:;">生活 箱包</a>
+              <div class="children">
+                <ul v-for="(item,i) in menuList" v-bind:key="i">
+                  <li v-for="(sub,j) in item" v-bind:key="j">
+                    <a v-bind:href="sub?'/#/product/'+sub.id:''">
+                      <img v-bind:src="sub?sub.img:'/imgs/item-box-1.png'" alt="">
+                      {{sub?sub.name:'小米9'}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,7 +252,8 @@
           {
             id:33,
             img:'/imgs/ads/ads-1.png'
-          },{
+          }
+          ,{
             id:48,
             img:'/imgs/ads/ads-2.jpg'
           },{

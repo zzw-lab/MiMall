@@ -7,6 +7,7 @@
           <a href="javascript:;">MUI</a>
           <a href="javascript:;">云服务</a>
           <a href="javascript:;">协议规则</a>
+          <a href="javascript:;" @click="admin">后台管理</a>
         </div>
         <div class="topbar-user">
           <a href="javascript:;" v-if="username">{{username}}</a>
@@ -148,6 +149,9 @@
     methods:{
       login(){
         this.$router.push('/login');
+      },
+      admin(){
+        this.$router.push('/admin');
       },
       getProductList(){
         this.axios.get('/products',{
